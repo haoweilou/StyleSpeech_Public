@@ -6,3 +6,5 @@ LoRA allows efficient adaptation of style features in pre-trained models.
 Additionally, we introduce a novel automatic evaluation metric, the LLM-Guided Mean Opinion Score (LLM-MOS), which employs large language models to offer an objective and robust protocol for automatically assessing TTS system performance.
 Extensive testing on benchmark datasets shows that our approach markedly outperforms existing state-of-the-art baseline methods in producing natural, accurate, and high-quality speech.
 These advancements not only pushes the boundaries of current TTS system capabilities,  but also facilitate the application of TTS system in more dynamic and specialized, such as interactive virtual assistants, adaptive audiobooks, and customized voice for gaming.
+
+![Architecature diagram](/fig/overview.png)
