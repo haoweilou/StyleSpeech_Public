@@ -8,3 +8,27 @@ Extensive testing on benchmark datasets shows that our approach markedly outperf
 These advancements not only pushes the boundaries of current TTS system capabilities,  but also facilitate the application of TTS system in more dynamic and specialized, such as interactive virtual assistants, adaptive audiobooks, and customized voice for gaming.
 
 ![Architecature diagram](/fig/overview.png)
+
+# Dataset
+
+In this research, we utilize the **Baker Dataset**, a Mandarin speech dataset, to evaluate our results. The methodology, however, is designed to be applicable to any speech dataset. To train the model, the dataset should contain the following columns:
+
+- **D (Phoneme Dictionary)**: A dictionary that maps phonemes to their corresponding indices.
+- **X (Phoneme Sequence)**: A sequence of phonemes (e.g., n, i, h, ao) represented as indices in the phoneme dictionary.
+- **S (Style Sequence)**: A sequence of style indices (e.g., 0, 3, 0, 3), where each index corresponds to a style attribute for the phoneme.
+- **L (Phoneme Duration)**: An integer value representing the duration of each phoneme. This can be calculated using a force aligner.
+- **Y (Target Output - Mel Spectrogram)**: A 2D feature representation of the speech. This can be a Mel-Spectrogram or any other suitable acoustic feature.
+
+# Environment Setup
+
+To set up the environment, install the required dependencies by running the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+# Trained Model
+[Download StyleSpeech Model](https://unsw-my.sharepoint.com/:u:/g/personal/z5258575_ad_unsw_edu_au/EcwTnfpEpMNMotoFqmNCVM8BcDBkVDpJDHQ7kG40REmMDw?e=wLaHBF)
+
+To obtain the password for the download, please contact me via email at:  
+[haowei.lou@unsw.edu.au](mailto:haowei.lou@unsw.edu.au)
